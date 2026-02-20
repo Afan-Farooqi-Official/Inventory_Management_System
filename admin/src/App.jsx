@@ -1,6 +1,5 @@
 import {Toaster} from 'react-hot-toast'
 import {Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
 import Layout from './pages/Layout'
 import Dashboard from './pages/Dashboard'
 import Products from './pages/Products'
@@ -15,8 +14,7 @@ const App = () => {
     <div>
       <Toaster />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/ims' element={<Layout />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path='products' element={<Products />} />
           <Route path='categories' element={<Categories />} />
