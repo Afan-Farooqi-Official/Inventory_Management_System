@@ -8,12 +8,14 @@ import Orders from './pages/Orders'
 import Suppliers from './pages/Suppliers'
 import Users from './pages/Users'
 import Profile from './pages/Profile'
+import SignIn from './pages/SignIn'
 
 const App = () => {
   return (
     <div>
       <Toaster />
       <Routes>
+        <Route path='signin' element={<SignIn/>} />
         <Route path='/' element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path='products' element={<Products />} />
